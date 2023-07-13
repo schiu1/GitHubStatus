@@ -10,8 +10,9 @@ function CheckStatus(){
             const status = body['components'][x]['status'];
             statusMap.set(name, status);
         }
-        console.log(statusMap);
+        console.log(statusMap.keys());
         for(const x in statusMap.keys()){
+            console.log("here");
             if (document.getElementById(x.replace(" ", "")) != null){
                 document.getElementById(x.replace(" ", "")).innerHTML = statusMap[x];
             }
