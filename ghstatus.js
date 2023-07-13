@@ -11,6 +11,11 @@ function CheckStatus(){
             statusMap.set(name, status);
         }
         console.log(statusMap);
+        for(const x in statusMap.keys()){
+            if (document.getElementById(x.replace(" ", "")) != null){
+                document.getElementById(x.replace(" ", "")).innerHTML = statusMap[x];
+            }
+        }
     });
 }
 CheckStatus();

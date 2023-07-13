@@ -2,31 +2,37 @@ body{
     font-family: 'Source Sans Pro', sans-serif;
 }
 
-#top{
+.top{
     font-size: 40px;
     text-align: center;
     margin: 20px;
 }
 
-#box{
+.box{
     color: #43425D;
-    font-size: 35px;
+    font-size: 30px;
     box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
     background-color: #F1F1F3;
     margin-left: 150px;
     margin-right: 150px;
-    padding: 3%;
+    padding: 2%;
     font-weight: bold;
     border-bottom: 2px solid #F1F1F3;
 }
 
-#name{
+.name{
     display: inline-block;
     margin: auto;
 }
 
-#status{
+.status{
     display: inline-block;
     margin:auto;
     float:right;
+    background-color: lightgreen;
+    border-radius: 20px;
+    font-weight: normal;
+    font-size: 20px;
+    padding: 10px;
+    
 }
