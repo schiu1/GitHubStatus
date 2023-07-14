@@ -40907,11 +40907,10 @@ function CheckStatus(){
             const status = body['components'][x]['status'];
             statusMap.set(name, status);
         }
-        console.log(statusMap.keys());
-        for(const x in statusMap.keys()){
-            console.log("here");
+        console.log(statusMap);
+        for(const x of statusMap.keys()){
             if (document.getElementById(x.replace(" ", "")) != null){
-                document.getElementById(x.replace(" ", "")).innerHTML = statusMap[x];
+                document.getElementById(x.replace(" ", "")).innerHTML = statusMap.get(x);
             }
         }
     });
