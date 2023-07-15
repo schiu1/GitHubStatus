@@ -1,3 +1,5 @@
+module.exports = {'CheckStatus':CheckStatus};
+
 function CheckStatus(){
     const statusMap = new Map();
     const request = require('request');
