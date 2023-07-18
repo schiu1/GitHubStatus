@@ -19,5 +19,10 @@ function CheckStatus(){
             }
         }
     });
+    const d = new Date();
+    const today = d.getMonth() + 1 + "/" + d.getDate() + "/" + d.getFullYear()
+    const currTime = d.getHours() + ":" + d.getMinutes() + ":" + d.getSeconds()
+    console.log(today + " " + currTime);
+    document.getElementById('time').innerHTML = "Last Refresh: " + today + " " + currTime;
 }
 CheckStatus();

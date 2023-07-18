@@ -50,7 +50,6 @@ body{
 }
 
 .status{
-    display: inline-block;
     margin:auto;
     float:right;
     background-color: lightgreen;
@@ -59,4 +58,11 @@ body{
     font-size: 20px;
     padding: 10px;
     
+}
+
+.time{
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;
+    font-size: 20px;
 }

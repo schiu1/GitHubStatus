@@ -5,25 +5,24 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>GitHub Status</title>
         <link href="style.css" rel="stylesheet">
-        <script src="bundle.js"></script>
     </head>
-<body>
-    <div class="top">GitHub Status</div>
-    <div class="info">
-        <div class="box">
-            <p class="name">Git Operations</p>
-            <p class="status" id="GitOperations">Unknown</p>
-        </div>
-        <div class="box">
-            <p class="name">API Requests</p>
-            <p class="status" id="APIRequests">Unknown</p>
-        </div>
-        <div class="box">
-            <p class="name">Webhooks</p>
-            <p class="status" id="Webhooks">Unknown</p>
-        </div>
-        <div class="box">
-            <p class="name">Issues</p>
+    <body>
+        <div class="top">GitHub Status</div>
+        <div class="info">
+            <div class="box">
+                <p class="name">Git Operations</p>
+                <p class="status" id="GitOperations">Unknown</p>
+            </div>
+            <div class="box">
+                <p class="name">API Requests</p>
+                <p class="status" id="APIRequests">Unknown</p>
+            </div>
+            <div class="box">
+                <p class="name">Webhooks</p>
+                <p class="status" id="Webhooks">Unknown</p>
+            </div>
+            <div class="box">
+                <p class="name">Issues</p>
             <p class="status" id="Issues">Unknown</p>
         </div>
         <div class="box">
@@ -51,8 +50,10 @@
             <p class="status" id="Copilot">Unknown</p>
         </div>
     </div>
+    <div class="time" id="time">Last Refresh: 7/18/23 6:35:29PM EST</div>
     <div class="buttonDiv">
         <button class="butt" onclick="myspace.CheckStatus()">Refresh Status</button>
     </div>
+    <script src="bundle.js"></script>
 </body>
 </html>
